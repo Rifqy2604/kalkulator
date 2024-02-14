@@ -1,0 +1,86 @@
+<html><form name="form1">
+    <script>
+        function Tambah()
+        {
+            var a=parseFloat(document.form1.a.value);
+            var b=parseFloat(document.form1.b.value);
+            var c=a+b;
+            document.form1.c.value=c;
+        }   
+        function Kurang()
+        {
+            var a=parseFloat(document.form1.a.value);
+            var b=parseFloat(document.form1.b.value);
+            var c=a-b;
+            document.form1.c.value=c;
+        } 
+        function Kali()
+        {
+            var a=parseFloat(document.form1.a.value);
+            var b=parseFloat(document.form1.b.value);
+            var c=a*b;
+            document.form1.c.value=c;
+        }     
+        function Bagi()
+        {
+            var a=parseFloat(document.form1.a.value);
+            var b=parseFloat(document.form1.b.value);
+            var c=a/b;
+            document.form1.c.value=c;
+        }   
+        function Clear()
+        {
+
+            document.form1.a.value="";
+            document.form1.b.value="";
+            document.form1.c.value="";
+        }   
+
+
+         </script>
+        <form action="test.html" method="post">
+   
+<meta name="viewport" content="width-device-width, inisial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<body bgcolor="black">
+
+<div class="w3-container">
+    <div class="w3-panel w3-orange">
+        <center>
+            <h1><b> KALKULATOR </b></h1>
+        </center>
+    </div>
+
+    <div class="w3-panel w3-card4 w3-blue">
+        <p>
+            <center>
+                <table>
+                    <tr><td>ANGKA 1 <td>:<input name="a" size="20">
+                    <tr><td>ANGKA 2<td>:<input name="b" size="20">
+                    <tr><td colspan="2"><hr>
+                    <tr><td>TOTAL <td>:<input name="c" size="10">
+                </table>
+            </center>
+        </p>
+    </div>
+
+    <center>
+    <div class="w3-panel w3-round-xxlarge w3-blue"  style="width: 50%">
+        <p>
+        <center>
+            <input type="button" class="w3-button w3-xlarge w3-circle w3-red" value="+" onclick="Tambah()">
+            <input type="button" class="w3-button w3-xlarge w3-circle w3-red" value="-" onclick="Kurang()">
+            <input type="button" class="w3-button w3-xlarge w3-circle w3-red" value="*" onclick="Kali()">
+            <input type="button" class="w3-button w3-xlarge w3-circle w3-red" value="/" onclick="Bagi()">
+            <input type="button" class="w3-button w3-xlarge w3-circle w3-red" value="delete" onclick="Clear()">
+
+        </center>
+    </p>
+    </div>
+    </center>
+</div>
+
+</body>
+
+</html>
